@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  prod-capture411-console-nextjs-app:
+    container_name: prod-capture411-console-nextjs-app
+    restart: unless-stopped
+    build: .
+    expose:
+      - 6655
+    ports:
+      - '6655:6655'
+    volumes:
+      - yarn-cache:/root/.yarn-cache # Mount the Yarn cache volume
+
+volumes:
+  yarn-cache: # Define the Docker managed volume for Yarn cache

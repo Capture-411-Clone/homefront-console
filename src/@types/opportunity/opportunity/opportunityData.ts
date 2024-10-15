@@ -1,0 +1,35 @@
+import { DocumentData } from '../document/documentData';
+import { UserData } from '../user/userData';
+
+export type OpportunityData = {
+  ID: number;
+  solicitation_number: string;
+  title: string;
+  description: string;
+  duplicated: boolean;
+  deprecated: boolean;
+  user: UserData;
+  user_id: number;
+  approved_at: null;
+  requested: boolean;
+  market: string;
+  department: string;
+  agency: string;
+  office: string;
+  naics: string;
+  fiscal_year: string;
+  set_aside: string;
+  contract_vehicle: string;
+  media: null;
+  staff_id: number | null;
+  staff: UserData | null;
+  created_at: Date;
+  updated_at: Date;
+  deleted_at: Date;
+  documents: DocumentData[];
+  multi_award: boolean;
+  is_draft: boolean;
+  crawler_contract_value: string;
+  user_contract_value: string;
+  user_knows_contract_value: boolean;
+};

@@ -1,0 +1,38 @@
+import { RoleData } from '../role/roleData';
+
+export type UserData = {
+  ID: string;
+  name: string;
+  email: string;
+  phone: string;
+  id_code: string;
+  username: string;
+  last_name: string;
+  suspended_at: Date | null;
+  phone_verified_at: Date | null;
+  email_verified_at: Date | null;
+  profile_completed_at: Date | null;
+  date_of_birth: string;
+  referral_code: string;
+  referred_with_code: string;
+  contributor_id: number;
+  gender: string;
+  contributor?: UserData;
+  roles: RoleData[];
+  created_at: Date;
+  updated_at: Date;
+  credits: number;
+  policy_approved_at: Date | null;
+  should_change_password: boolean;
+  address: string;
+  company_name: string;
+  country: string;
+  invite: string;
+  password: string;
+  state: string;
+  stripe_customer_id: string;
+  subscription_id: string;
+  title: string;
+  town_city: string;
+  zip_code: string;
+};

@@ -1,0 +1,24 @@
+export type SiteInfoData = {
+  ID: number;
+  company_name: string;
+  mission_statement: string;
+  history: string;
+  goal: string;
+  value: string;
+  achievement: string;
+  member: string;
+  general_contact: string;
+  address: string;
+  social_media: string;
+  phone_number: string;
+  email_address: string;
+  office_hours: string;
+  physical_address: string;
+  map_or_directions: string;
+  emergency_contact: string;
+  feedback_link: string;
+  support_link: string;
+  created_at: Date;
+  updated_at: Date;
+  deleted_at: Date;
+};
